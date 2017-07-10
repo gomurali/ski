@@ -45,9 +45,10 @@ const AddDayForm = ({ suggestions=[], onNewDay=f=>f, onChange=f=>f, onClear=f=>f
             <input id="date"
                    type="date"
                    ref={input => _date = input}
-                   required/>
+                   required
+                   className="form-control"/>
 
-            <div>
+            <div className="form-group">
                 <input id="powder-day"
                        ref={input => _powder = input}
                        type="checkbox"/>
@@ -61,7 +62,7 @@ const AddDayForm = ({ suggestions=[], onNewDay=f=>f, onChange=f=>f, onClear=f=>f
                 <label htmlFor="backcountry-day">Backcountry</label>
             </div>
 
-            <button>Add Day</button>
+            <button className="btn btn-danger">Add Day</button>
 
         </form>
     )

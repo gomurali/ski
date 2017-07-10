@@ -17,8 +17,8 @@ const SkiDayList = ({ days, filter, onRemoveDay=f=>f }) => {
     }
 
     return (
-        <div className="ski-day-list">
-            <table>
+        <div className="ski-day-list  col-md-8  col-md-offset-2">
+            <table className="table table-striped">
                 <caption>double click to remove</caption>
                 <thead>
                 <tr>

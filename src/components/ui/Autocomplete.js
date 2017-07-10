@@ -16,7 +16,7 @@ class Autocomplete extends Component {
         const { suggestions=[], onChange=f=>f, onClear=f=>f, fetching=false } = this.props
 
         return (
-            <div className="autocomplete">
+            <div className="autocomplete form-group">
 
                 <input ref="searchTerm"
                        type="text"
@@ -24,7 +24,7 @@ class Autocomplete extends Component {
                        onChange={onChange}
                        onFocus={onChange}
                        onBlur={() => setTimeout(onClear, 250)}
-                />
+                       className="form-control" />
 
                 <span>{(fetching) ? <Downloading /> : null }</span>
 

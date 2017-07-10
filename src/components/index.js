@@ -5,10 +5,10 @@ import '../stylesheets/index.scss'
 
 export const App = ({children}) =>
     <div className="app">
-        <ShowErrors />
-        {children}
-        <GoalProgress />
         <Menu />
+        {/*<ShowErrors />*/}
+        {children}
+        {/*<GoalProgress />*/}
     </div>
 
 export const Whoops404 = ({ location }) =>
