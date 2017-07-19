@@ -3,13 +3,17 @@ import ShowErrors from './containers/ShowErrors'
 import GoalProgress from './containers/GoalProgress'
 import '../stylesheets/index.scss'
 
-export const App = ({children}) =>
-    <div className="app">
-        <Menu />
-        {/*<ShowErrors />*/}
-        {children}
-        {/*<GoalProgress />*/}
-    </div>
+export const App = ({children}) => {
+
+    return (
+        <div className="app">
+            <Menu />
+            {/*<ShowErrors />*/}
+            {children}
+            {/*<GoalProgress />*/}
+        </div>
+    );
+}
 
 export const Whoops404 = ({ location }) =>
     <div className="whoops-404">
